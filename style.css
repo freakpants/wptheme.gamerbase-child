@@ -1,0 +1,30 @@
+/*
+	Theme Name:   PixieHype Child
+	Theme URI:    http://themes.pixiesquad.com
+	Description:  Child theme for PixieHype theme
+	Author:       PixieSquad
+	Author URI:   http://pixiesquad.com
+	Template:     pixiehype
+	Version:      1.0.0
+    License: PixieSquad Themes. All rights reserved.
+    License URI: https://themeforest.net/user/pixiesquad
+    Tags: sticky-post, featured-images, editor-style, custom-colors, custom-background, one-column
+	Text Domain:  pixiehype-child
+*/
+.lavalamp-object{
+	display: none;
+}
+
+/* reset the h3 style on the search overlay */
+#footer .results--other h3{
+	color:	black;
+	text-transform: initial;
+}
+
+section#footer .results--other h3::after{
+	width:100%;
+}
+
+.search-overlay{
+	background:rgba(255,255,255,0.85);
+}
