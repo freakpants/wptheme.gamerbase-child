@@ -1,0 +1,1 @@
+# wptheme.gamerbase-child
