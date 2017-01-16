@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 	<section id="news-header" class="header-bg archive">
 
 		<!-- RESPONSIVE.ELEMENTS -->
@@ -75,7 +74,9 @@
 							// Show category
 							$categories = get_the_category();
 							if ( ! empty( $categories ) ) {
-								echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '" class="post-category">' . esc_html( $categories[0]->name ) . '</a>';
+								foreach ( $categories as $category ){
+                                	echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="post-category">' . esc_html( $category->name ) . '</a>  ';
+                                }
 							}
 							?>
 
@@ -108,7 +109,9 @@
 							// Show category
 							$categories = get_the_category();
 							if ( ! empty( $categories ) ) {
-								echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '" class="post-category">' . esc_html( $categories[0]->name ) . '</a>';
+								foreach ( $categories as $category ){
+                                	echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="post-category">' . esc_html( $category->name ) . '</a>  ';
+                                }
 							}
 							?>
 
