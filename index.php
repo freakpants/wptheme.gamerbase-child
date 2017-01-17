@@ -214,9 +214,7 @@
                                 if(is_sticky(get_the_ID())) {
                                     echo ' / ';
                                 }
-                                foreach ( $categories as $category ){
-                                	echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="post-category">' . esc_html( $category->name ) . '</a>  ';
-                                }
+                                categories_as_images( $categories );
                             }
                             ?>
 

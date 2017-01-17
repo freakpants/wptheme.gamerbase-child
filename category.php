@@ -74,9 +74,7 @@
 							// Show category
 							$categories = get_the_category();
 							if ( ! empty( $categories ) ) {
-								foreach ( $categories as $category ){
-                                	echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="post-category">' . esc_html( $category->name ) . '</a>  ';
-                                }
+								categories_as_images( $categories );
 							}
 							?>
 
@@ -109,9 +107,7 @@
 							// Show category
 							$categories = get_the_category();
 							if ( ! empty( $categories ) ) {
-								foreach ( $categories as $category ){
-                                	echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="post-category">' . esc_html( $category->name ) . '</a>  ';
-                                }
+								categories_as_images( $categories );
 							}
 							?>
 
