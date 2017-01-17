@@ -49,7 +49,7 @@
 
 		<div class="container">
 
-			<h1 class="archive-sub"><?php esc_html_e( 'Categories for ', 'pixiehype' ); single_cat_title(); ?></h1>
+			<h1 class="archive-sub"><?php esc_html_e( 'News in the category ', 'pixiehype' ); single_cat_title(); ?></h1>
 			<?php
 			// settings for news
 			$showDate = ( get_option('news-show-date') == 1 ? 1 : 0 );
