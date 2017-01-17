@@ -21,10 +21,20 @@
 	text-transform: initial;
 }
 
+/* 
+ * on the search overlay from ajax-search plugin, widen the line after to full 
+ * width 
+ */
 section#footer .results--other h3::after{
 	width:100%;
 }
 
+/* make search overlay from ajax-search plugin transparent */
 .search-overlay{
 	background:rgba(255,255,255,0.85);
+}
+
+.news-article i{
+	font-size:30px;
+	top:12px;
 }

@@ -24,8 +24,12 @@ add_action('wp_enqueue_scripts', 'pixie_child_styles'); // Add Theme Stylesheet
 // output categories as images
 function categories_as_images( $categories ){
 	foreach ( $categories as $category ){
-	    echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="post-category">
-    			 <img src="' . get_stylesheet_directory_uri() .'/assets/images/categories/' . $category->slug .'.png" width="35px" />
-			 </a>  ';
+		echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="post-category">';
+		if( $category->slug == 'events'){
+			echo '<i class="glyphicon glyphicon-calendar" aria-hidden="true" ></i>';
+		} else {
+			echo '<img src="' . get_stylesheet_directory_uri() .'/assets/images/categories/' . $category->slug .'.png" width="50px" />';
+		}
+		echo '</a>';
     }
 }
