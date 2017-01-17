@@ -26,7 +26,7 @@ function categories_as_images( $categories ){
 	foreach ( $categories as $category ){
 		echo '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="post-category">';
 		if( $category->slug == 'events'){
-			echo '<i class="glyphicon glyphicon-calendar" aria-hidden="true" ></i>';
+			echo '<i class="glyphicon glyphicon-calendar category-glyph" aria-hidden="true" ></i>';
 		} else {
 			echo '<img src="' . get_stylesheet_directory_uri() .'/assets/images/categories/' . $category->slug .'.png" width="50px" />';
 		}

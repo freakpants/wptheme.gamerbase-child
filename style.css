@@ -34,7 +34,7 @@ section#footer .results--other h3::after{
 	background:rgba(255,255,255,0.85);
 }
 
-.news-article i{
-	font-size:30px;
-	top:12px;
+.news-article .category-glyph{
+	font-size:45px;
+	top:18px;
 }
